@@ -16,7 +16,7 @@ PayRight SDK 为开发者提供了demo 程序，可以快速体验 PayRight 接�
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/coderbook/MarkDownRes/master/PayRightPic/payright_sdk_android_files.png" width = "400" height = "400" alt="图片名称" align=center />
-<div>
+</div>
 
 
 
