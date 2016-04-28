@@ -62,7 +62,7 @@ ContentType: application/json
 |amount|Decimal|true|订单总金额，大于0的数字，单位是该币种的货币单位|
 |subject|String|true|购买商品的标题，最长32位|
 |body|String|true|购买商品的描述信息，最长128个字符|
-|channel|String|true|支付渠道编码，唯一标识一个支付渠道，参考[支付渠道编码]()|
+|channel|String|true|支付渠道编码，唯一标识一个支付渠道，参考[支付渠道编码](#支付渠道编码)|
 |app|String|true|应用的appKey|
 |client_ip| String | true |发起支付的客户端IP|
 |description| String | false |订单备注，限制300个字符内|
@@ -147,3 +147,15 @@ ContentType: application/json
 返回：
 
 Refund对象
+
+
+
+## 支付渠道编码
+
+|渠道|编码|
+|:---|:---|
+|支付宝移动支付| alipay_app|
+|微信移动支付| wechat_app|
+|Apple Pay| apple_pay_app|
+|微信公众号| wechat_wap|
+|支付宝即时到账| alipay_web|
