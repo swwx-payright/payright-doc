@@ -18,7 +18,7 @@ Charge对象结构：
 |amount|Decimal|订单总金额，大于0的数字，单位是该币种的货币单位|
 |subject|String|购买商品的标题，最长32位|
 |body|String|购买商品的描述信息，最长128个字符|
-|channel|String|支付渠道编码，唯一标识一个支付渠道，参考[支付渠道编码]()|
+|channel|String|支付渠道编码，唯一标识一个支付渠道，参考[支付渠道编码](#支付渠道编码)|
 |client_ip| String |发起支付的客户端IP|
 |description| String |订单备注，限制300个字符内|
 |extra|Map|特定渠道需要的的额外附加参数|
