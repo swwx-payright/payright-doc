@@ -3,6 +3,33 @@
 1. https传输协议
 2. 数据使用RSA签名和验签
 
+签名生成方法： 
+我们采用的签名方式是对HTTP请求的请求体签名，并将签名值放入Header中，key为sign。
+
+假如请求体为：
+
+```javascript
+{
+	"order_no":"payright-11110002",
+	"amount":2.01,
+	"subject":"test",
+	"body":"test",
+	"channel":"alipay_app",
+	"app":"app_kdjksldf93oksd923oks",
+	"client_ip":"127.0.0.1"
+}
+```
+
+需要将请求体以UTF-8编码转换成字节数组，然后使用商户私钥对其签名，签名算法为SHA1WithRSA。并将签名结果和Secret Key分别放入HTTP请求的Header中，例如：
+
+```http
+POST /charges HTTP/1.1
+Host: https://payright.cn/api
+ContentType: application/json
+Authorization: {填入Secret Key}
+sign: {填入签名结果}
+```
+
 
 ## 支付
 
@@ -46,12 +73,13 @@ Charge对象结构：
 
 使用HTTP协议调用支付接口发起请求：
 
-//TODO http请求头的secret_key设置
 
 ```http
 POST /charges HTTP/1.1
 Host: https://payright.cn/api
 ContentType: application/json
+Authorization: {SECRET_KEY}
+sign: {sign}
 ```
 
 请求参数：
@@ -84,6 +112,8 @@ Charge对象
 GET /charges/{CHARGE_ID} HTTP/1.1
 Host: https://payright.cn/api
 ContentType: application/json
+Authorization: {SECRET_KEY}
+sign: {sign}
 ```
 
 返回：
@@ -122,6 +152,8 @@ Charge对象
 POST /charges/{CHARGE_ID}/refunds HTTP/1.1
 Host: https://payright.cn/api
 ContentType: application/json
+Authorization: {SECRET_KEY}
+sign: {sign}
 ```
 
 请求参数：
@@ -142,6 +174,8 @@ Refund对象
 GET /charges/{CHARGE_ID} HTTP/1.1
 Host: https://payright.cn/api
 ContentType: application/json
+Authorization: {SECRET_KEY}
+sign: {sign}
 ```
 
 返回：
