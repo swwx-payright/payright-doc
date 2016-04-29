@@ -24,11 +24,12 @@ Payright为您提供一站式集成化支付接入解决方案，通过Payright�
 	
 服务器端接口方面，我们提供了基于HTTP协议的Web接口，因此理论上来说，任何语言都可以接入Payright服务。同时我们提供Server SDK，方便您的服务器端集成Payright服务；现在只提供Java语言版的Server SDK，其他语言的版本正在开发中。
 	
-Server SDK下载地址：https://github.com/swwx-payright/payright-server-sdk-java
+[下载Server SDK Java版](https://github.com/swwx-payright/payright-server-sdk-java/archive/master.zip)
 	
 同时我们提供了Client SDK，方便您在自己的APP中集成Payright支付服务；Client SDK现在有iOS和Android版本，请根据您的APP平台选择相应的开发包。
 	
-Client SDK下载地址：https://github.com/swwx-payright/payright-doc/tree/master/sdk
+[下载Android SDK](https://github.com/swwx-payright/payright-demo-android/archive/master.zip)
+[下载iOS SDK](https://github.com/swwx-payright/payright-demo-ios/archive/master.zip)
 	
 
 ### 需要您做什么
