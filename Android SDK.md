@@ -2,7 +2,9 @@
 
 ### 一、下载
 
-在 http://www.payright.cn 下载Android SDK，下载列表如下包含：
+Android SDK下载地址：https://github.com/swwx-payright/payright-doc/tree/master/sdk
+
+下载Android SDK，下载列表如下包含：
 
 ![下载列表](https://raw.githubusercontent.com/coderbook/MarkDownRes/master/PayRightPic/payright_sdk_android_dir.png)
 

@@ -6,9 +6,9 @@
 
 请在以下地址，根据您的应用平台和开发语言选择相应的SDK
 
-Client SDK下载地址：https://payright.cn/downloads/
+Client SDK下载地址：https://github.com/swwx-payright/payright-doc/tree/master/sdk
 	
-Server SDK下载地址：https://payright.cn/downloads/
+Server SDK下载地址：https://github.com/swwx-payright/payright-server-sdk-java
 
 
 ### 2. 集成开发
@@ -151,6 +151,6 @@ Server SDK下载地址：https://payright.cn/downloads/
 
 客户端暂时只提供iOS和Android版SDK。
 
-* ![SDK下载地址](a.log)
-* ![iOS SDK集成指南](ios.md)
-* ![Android SDK集成指南](android.md)
+* [SDK下载](sdk)
+* [iOS SDK集成指南](iOS SDK.md)
+* [Android SDK集成指南](Android SDK.md)

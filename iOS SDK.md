@@ -2,7 +2,8 @@
 
 ## 安装
 #### 手动导入
-1.在PayRight官网下载iOS SDK开发包，将lib目录下的文件添加到你的项目
+1.下载iOS SDK开发包，将lib目录下的文件添加到你的项目
+	iOS SDK下载地址：https://github.com/swwx-payright/payright-doc/tree/master/sdk
 
 2.依赖 Frameworks：
 >必需：
